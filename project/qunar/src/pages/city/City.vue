@@ -1,7 +1,7 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-search></city-search>
+    <city-search :city="city"></city-search>
     <city-list :hot="hotCity" :city="city" :letter="letter"></city-list>
     <city-alphabet :city="city" @change="letterChange"></city-alphabet>
   </div>
@@ -34,7 +34,7 @@ export default {
         .then(this.getCityInfoSucc)
     },
     getCityInfoSucc (res) {
-      console.log(res)
+      // console.log(res)
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
