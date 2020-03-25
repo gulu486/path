@@ -5,7 +5,7 @@
       :key="item"
       :ref="item"
       @click="letterClick"
-      @touchstart="startMove"
+      @touchstart.prevent="startMove"
       @touchmove="moveMove"
       @touchend="endMove"
     >

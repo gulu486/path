@@ -38,7 +38,7 @@ export default {
     letter: String
   },
   mounted () {
-    this.scroll = new BScroll(this.$refs.wrapper)
+    this.scroll = new BScroll(this.$refs.wrapper, {click: true})
   },
   computed: {
     ...mapState({
