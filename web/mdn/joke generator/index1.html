@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width">
   <title>笑话生成器</title>
   <link rel="stylesheet" href="./index2.css">
+
+  <!-- defer 在文档完成解析后，触发 DOMContentLoaded 事件前执行 -->
   <script src="./index2-1.js" defer></script>
   <script src="./index2.js" defer></script>
 </head>
@@ -14,16 +16,21 @@
 <body>
   <div>
     <label for="customname" id="lbl-customname">请输入自定义的名字：</label>
+
+    <!-- 表单元素占位文本placeholder -->
     <input id="customname" type="text" placeholder="李雷">
   </div>
+
   <div>
     <label for="cn" id="lbl-cn">中国</label>
+    <!-- radio单选按钮 -->
     <input id="cn" type="radio" name="country" value="cn" checked>
     <label for="us" id="lbl-us">美国</label>
     <input id="us" type="radio" name="country" value="us">
     <label for="uk" id="lbl-uk">英国</label>
     <input id="uk" type="radio" name="country" value="uk">
   </div>
+
   <div>
     <button class="randomize">随机生成笑话</button>
   </div>
