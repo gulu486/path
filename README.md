@@ -1,6 +1,6 @@
 # learning-path
 ## 🏫 mdn
-### 1.guess the number game
+### [1.guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
 ```javascript
 // 0~100的随机数
 let randomNumber = Math.floor(Math.random() * 100);
@@ -19,6 +19,3 @@ for语句遍历设置内容清空;\
 事件监听器**addEventListener('click', 𝓕)**执行函数;
 
 ### 2.joke generator
-```javascript
-
-```
