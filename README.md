@@ -19,3 +19,4 @@ for语句遍历设置内容清空;\
 事件监听器**addEventListener('click', 𝓕)**执行函数;
 
 ### 2.joke generator
+##  🔧 tool
