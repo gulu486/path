@@ -37,4 +37,4 @@ b2.
 2.
 ## 🎈 project
 ### 📃 [qunar](https://github.com/gulu486/learning-path/tree/master/project/qunar)
-### 📃 tooth
+### 📃 [tooths](https://github.com/gulu486/learning-path/tree/master/project/tooths)
