@@ -10,7 +10,7 @@ document.body.appendChild(resetButton);
 resetButton.parentNode.removeChild(resetButton);
 ```
 >data\
-html中的节点使用**document.querySelector()**方法获取;\
+html中的节点使用**document.querySelector**方法获取;\
 随机数用内置Math产生，声明定义计数轮次**guessCount**;
 
 >js\
@@ -26,12 +26,15 @@ for语句遍历设置内容清空;\
 import fastClick from 'fastclick'
 fastClick.attach(document.body)
 ```
+b2.
 ### 🍀 css
-1.重置页面样式表(手机浏览器页面样式统一)--**reset.css**\
-2.移动端1像素边框问题--**border.css**\
+1.重置页面样式表(手机浏览器页面样式统一)--**[reset.css](https://github.com/gulu486/learning-path/blob/master/web/tool/src/reset.css)**\
+2.移动端1像素边框问题--**[border.css](https://github.com/gulu486/learning-path/blob/master/web/tool/src/border.css)**\
 3.图标--**[iconfont](https://www.iconfont.cn/)**\
-4.stylus
-### 🕸 html
-
+4.
+### 🕸 [html](https://github.com/gulu486/learning-path/blob/master/web/tool/tool.html)
+1.移动端设备，用户用手指放大缩小操作无效，页面比例始终是1：1\
+2.
 ## 🎈 project
-### 📃qunar
+### 📃 [qunar](https://github.com/gulu486/learning-path/tree/master/project/qunar)
+### 📃 tooth
