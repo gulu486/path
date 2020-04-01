@@ -1,6 +1,6 @@
 # learning-path
 ## 🏫 mdn
-### [1.guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
+### 1.[guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
 ```javascript
 // 0~100的随机数
 let randomNumber = Math.floor(Math.random() * 100);
@@ -10,13 +10,28 @@ document.body.appendChild(resetButton);
 resetButton.parentNode.removeChild(resetButton);
 ```
 >data\
-html中的节点使用**document.querySelector**方法获取;\
+html中的节点使用**document.querySelector()**方法获取;\
 随机数用内置Math产生，声明定义计数轮次**guessCount**;
 
 >js\
 if语句判断猜的数字高低和是否结束;\
 for语句遍历设置内容清空;\
-事件监听器**addEventListener('click', 𝓕)**执行函数;
+事件监听器**addEventListener('click', fun)**执行函数;
 
 ### 2.joke generator
 ##  🔧 tool
+### 🎺 js
+1.300毫秒点击延迟问题(click事件延迟)--**npm install fastclick --save**
+```javascript
+import fastClick from 'fastclick'
+fastClick.attach(document.body)
+```
+### 🍀 css
+1.重置页面样式表(手机浏览器页面样式统一)--**reset.css**\
+2.移动端1像素边框问题--**border.css**\
+3.图标--**[iconfont](https://www.iconfont.cn/)**\
+4.stylus
+### 🕸 html
+
+## 🎈 project
+### 📃qunar
