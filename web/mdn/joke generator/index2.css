@@ -13,6 +13,7 @@ div {
 padding-bottom: 20px;
 }
 
+/* css3的选择器“[attribute=value]” */
 input[type="text"] {
 padding: 5px;
 width: 150px;
@@ -22,5 +23,7 @@ p {
 background: #FFC125;
 color: #5E2612;
 padding: 10px;
+
+/* 元素不可见 visible(可见) hidden(不可见) */
 visibility: hidden;
 }
