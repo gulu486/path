@@ -39,17 +39,20 @@ export default {
 <style>
   .left-nav{
     /* 图标颜色 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
     color: #fff;
     /* 图标大小 */
     font-size: 10px;
     /* 基本的高，100%显示 */
-    height: 100%;
+    height: 190px;
     /* 背景色 */
     background-color: #1D8CE0;
     /* 向左浮动 */
     float: left;
     /* 基本的宽度 */
-    width: 5%;
+    width: 13%;
   }
   .left-nav ul{
     padding: 0px;
@@ -62,7 +65,7 @@ export default {
     text-align: center;
     /* 下划线 */
     border-bottom: 1px solid #20a0ff;
-    padding: 10px;
+    /* padding: 10px; */
   }
   .iconfont{
     /* 让图标大些 */
