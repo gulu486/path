@@ -23,34 +23,12 @@ export default {
         return {
             items: [{
                 href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320",
-            }, {
-                href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t16138/325/817844900/36681/5d874455/5a422029Ncd678ea3.jpg?width=750&height=320",
-            }, {
-                href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t13465/324/2563794460/43029/3ffca963/5a421f83Ne8089231.jpg?width=750&height=320",
+                src: "http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E7%AF%AE%E7%90%83&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=2848101109,2173568207&os=96666547,1297177721&simid=3393542314,70452826&pn=3&rn=1&di=7700&ln=1883&fr=&fmq=1590547428194_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Ffile06.16sucai.com%2F2015%2F1118%2F3f67782b40b382104e66f816b8bb088c.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined",
             }],
             enters: [{
                 href: "home",
-                img: "//img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132",
+                img: "http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E7%AF%AE%E7%90%83&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=2223656641,1344688472&os=1700932220,3807647571&simid=3457927218,275575181&pn=5&rn=1&di=175120&ln=1883&fr=&fmq=1590547428194_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fdpic.tiankong.com%2Fb1%2Fmu%2FQJ6959574486.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined",
                 title: "优惠券",
-            }, {
-                href: "home",
-                img: "//img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132",
-                title: "领红包",
-            }, {
-                href: "home",
-                img: "//img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png?width=132&height=132",
-                title: "抢钢镚",
-            }, {
-                href: "home",
-                img: "//img12.360buyimg.com/jrpmobile/jfs/t4618/115/2179710654/11347/bf520df/58ec9d84Nfd169001.png?width=132&height=132",
-                title: "领京豆",
-            }, {
-                href: "home",
-                img: "//img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135",
-                title: "白条提额",
             }],
         }
     },

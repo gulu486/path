@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="todo-item">
+    <form v-on:submit.prevent="addNewItem">
+      <label>add a todo</label>
+      <input v-model="newTodoItem" placeholder="E.G">
+      <button>add</button>
+    </form>
+    <ul>
+      <li is="todo-item"
+        v-for="(item, index) in todos"
+        :key=item.id
+        :title=item.title
+        v-on:remove="todos.splice(index,1)"
+      ></li>
+    </ul>
+  </div>
+  <script>
+    Vue.component('todo-item',{
+      template:'\
+        <li>\
+          {{title}}\
+          <button v-on:click="$emit(\'remove\')">remove</button>\
+        </li>\
+      ',
+      props:['title']
+    })
+    new Vue({
+      el:'#todo-item',
+      data:{
+        newTodoItem:'',
+        todos:[{
+          id:1,
+          title:'i'
+        },{
+          id:2,
+          title:'love'
+        },{
+          id:3,
+          title:'u'
+        }],
+        nextItemId:4
+      },
+      methods:{
+        addNewItem:function(){
+          this.todos.push({
+            id:this.nextItemId++,
+            title:this.newTodoItem
+          })
+          this.newTodoItem=''
+        }
+      }
+    })
+  </script>
+</body>
+</html>
