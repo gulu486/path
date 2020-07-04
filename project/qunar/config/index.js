@@ -7,9 +7,10 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
+    // Paths webpack-dev-server提供
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // 代理转发机制配置
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
@@ -57,6 +58,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    // 打包路径可更改
     assetsPublicPath: '/',
 
     /**

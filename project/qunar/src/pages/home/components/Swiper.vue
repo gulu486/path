@@ -1,12 +1,12 @@
 <template>
-<div class="wrapper">
-  <swiper :options="swiperOption" v-if="showSwiper">
-    <swiper-slide v-for="item of list" :key="item.id">
-      <img class="swiper-img" :src="item.imgUrl">
-    </swiper-slide>
-    <div class="swiper-pagination"  slot="pagination"></div>
-  </swiper>
-</div>
+  <section class="wrapper">
+    <swiper :options="swiperOption" v-if="showSwiper">
+      <swiper-slide v-for="item of list" :key="item.id">
+        <img class="swiper-img" :src="item.imgUrl">
+      </swiper-slide>
+      <div class="swiper-pagination"  slot="pagination"></div>
+    </swiper>
+  </section>
 </template>
 
 <script>
@@ -19,17 +19,12 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
+        // 循环轮播
         loop: true
       }
-      // swiperList: [{
-      //   id: '001',
-      //   imgUrl: 'http://img1.qunarzz.com/piao/fusion/1802/e3/62ce7362ca051d02.jpg_640x200_6db551b7.jpg'
-      // }, {
-      //   id: '002',
-      //   imgUrl: 'http://img1.qunarzz.com/piao/fusion/1801/93/ce59d182aca07102.jpg_640x200_ba03d44c.jpg'
-      // }]
     }
   },
+  // swiper初次创建为空数组
   computed: {
     showSwiper () {
       return this.list.length
@@ -39,13 +34,16 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
+  // 样式穿透，scoped->全局样式
   .wrapper >>> .swiper-pagination-bullet-active
     background: #fff
   .wrapper
+  // 解决swiper抖动，撑开
     overflow: hidden
     width: 100%
     height: 0
     padding-bottom: 31.25%
     .swiper-img
+      // img适配
       width: 100%
 </style>

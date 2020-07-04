@@ -1,6 +1,7 @@
 <template>
+<!-- 动画 -->
   <transition>
-    <slot></slot>
+    <slot/>
   </transition>
 </template>
 

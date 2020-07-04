@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
       <div class="iconfont header-back-icon">&#xe624;</div>
     </router-link>
@@ -9,7 +9,7 @@
         <span class="iconfont header-fixed-back">&#xe624;</span>
       </router-link>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -18,6 +18,7 @@ export default {
   data () {
     return {
       showAbs: true,
+      // style对象绑定
       opacityStyle: {
         opacity: 0
       }
@@ -29,24 +30,28 @@ export default {
       // console.log(document.documentElement.scrollTop)
       if (top > 60) {
         let opacity = top / 140
+        // opacity从0到1递增
         opacity = opacity > 1 ? 1 : opacity
         this.opacityStyle = { opacity }
+        // 显示header
         this.showAbs = false
       } else {
         this.showAbs = true
       }
     }
   },
-  activated () {
+  mounted () {
+    // 全局绑定
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
 
 <style lang='stylus' scoped>
+// 引入varibles.styl
   @import '~styles/varibles.styl'
   .header-abs
     position absolute
@@ -55,6 +60,7 @@ export default {
     width .8rem
     height .8rem
     line-height .8rem
+    // 一个圆
     border-radius .4rem
     text-align center
     background rgba(0, 0, 0, 0.8)

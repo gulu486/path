@@ -1,5 +1,5 @@
 export default {
-  doubleCity (state) {
+  doubleCity: (state) => {
     return state.city + ' ' + state.city
   }
 }
