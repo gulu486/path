@@ -2,7 +2,7 @@
   <div>
     <home-header/>
     <home-swiper :list=swiperList />
-    <home-icons :list=iconList></home-icons>
+    <home-icons :list=iconList />
     <home-recommend :list=recommendList />
     <home-weekend :list=weekendList />
   </div>
@@ -82,7 +82,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
