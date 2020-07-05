@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # path
 ## 🏫 mdn
 ### 1.[guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
@@ -39,3 +40,15 @@ b2.
 ### 📃 [qunar](https://github.com/gulu486/learning-path/tree/master/project/qunar)
 ### 📃 [tooths](https://github.com/gulu486/learning-path/tree/master/project/tooths)
 ### 📃 [pos](https://github.com/gulu486/learning-path/tree/master/project/pos)
+=======
+### path
+#### 🏫 mdn
+##### 1.[guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
+##### 2.joke generator
+<hr>
+
+#### 🎈 project
+###### 📃 [qunar](https://github.com/gulu486/learning-path/tree/master/project/qunar)
+###### 📃 [tooths](https://github.com/gulu486/learning-path/tree/master/project/tooths)
+###### 📃 [pos](https://github.com/gulu486/learning-path/tree/master/project/pos)
+>>>>>>> re
