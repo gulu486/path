@@ -1,4 +1,4 @@
-# learning-path
+# path
 ## 🏫 mdn
 ### 1.[guess the number game](https://github.com/gulu486/learning-path/tree/master/web/mdn/guess%20the%20number%20game)
 ```javascript
