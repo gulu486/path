@@ -1,0 +1,36 @@
+// let用来声明变量，所声明的变量，只在let命令所在的代码块内有效。
+{
+  let a = 10;
+  var b = 1;
+}
+a // ReferenceError: a is not defined.
+b // 1
+
+// for循环的计数器
+for (let i = 0; i < 10; i++) {
+  // ...
+}
+// 计数器i只在for循环体内有效，在循环体外引用就会报错
+console.log(i);
+// ReferenceError: i is not defined
+
+// 使用var
+var a = [];
+for (var i = 0; i < 10; i++) {
+  a[i] = function () {
+    // 全局的i
+    console.log(i);
+  };
+}
+a[6](); // 10
+
+// 使用let，声明的变量仅在块级作用域内有效
+var a = [];
+for (let i = 0; i < 10; i++) {
+  a[i] = function () {
+    console.log(i);
+  };
+}
+a[6](); // 6
+
+// 设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域
