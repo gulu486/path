@@ -99,13 +99,3 @@ getJSON("/posts.json").then(function(json) {
   console.error('出错了', error);
 });
 // getJSON是对 XMLHttpRequest 对象的封装，用于发出一个针对 JSON 数据的 HTTP 请求，并且返回一个Promise对象。需要注意的是，在getJSON内部，resolve函数和reject函数调用时，都带有参数。
-
-// p1和p2都是 Promise 的实例，但是p2的resolve方法将p1作为参数，即一个异步操作的结果是返回另一个异步操作。
-const p1 = new Promise(function (resolve, reject) {
-  // ...
-});
-
-const p2 = new Promise(function (resolve, reject) {
-  // ...
-  resolve(p1);
-})

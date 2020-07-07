@@ -22,7 +22,6 @@ promise.then(function(value) {
 // 简单例子
 function timeout(ms) {
   return new Promise((resolve, reject) => {
-    // 定时器
     setTimeout(resolve, ms, 'done');
   });
 }
@@ -52,12 +51,10 @@ function loadImageAsync(url) {
   return new Promise(function(resolve, reject) {
     const image = new Image();
 
-    // 成功
     image.onload = function() {
       resolve(image);
     };
 
-    // 失败
     image.onerror = function() {
       reject(new Error('Could not load image at ' + url));
     };
@@ -65,47 +62,3 @@ function loadImageAsync(url) {
     image.src = url;
   });
 }
-
-// 用Promise对象实现的 Ajax 操作的例子
-const getJSON = function(url) {
-  const promise = new Promise(function(resolve, reject){
-
-    const handler = function() {
-      if (this.readyState !== 4) {
-        return;
-      }
-      if (this.status === 200) {
-        resolve(this.response);
-      } else {
-        reject(new Error(this.statusText));
-      }
-    };
-
-    const client = new XMLHttpRequest();
-    client.open("GET", url);
-    client.onreadystatechange = handler;
-    client.responseType = "json";
-    client.setRequestHeader("Accept", "application/json");
-    client.send();
-  });
-
-  // 返回promise对象
-  return promise;
-};
-
-getJSON("/posts.json").then(function(json) {
-  console.log('Contents: ' + json);
-}, function(error) {
-  console.error('出错了', error);
-});
-// getJSON是对 XMLHttpRequest 对象的封装，用于发出一个针对 JSON 数据的 HTTP 请求，并且返回一个Promise对象。需要注意的是，在getJSON内部，resolve函数和reject函数调用时，都带有参数。
-
-// p1和p2都是 Promise 的实例，但是p2的resolve方法将p1作为参数，即一个异步操作的结果是返回另一个异步操作。
-const p1 = new Promise(function (resolve, reject) {
-  // ...
-});
-
-const p2 = new Promise(function (resolve, reject) {
-  // ...
-  resolve(p1);
-})
