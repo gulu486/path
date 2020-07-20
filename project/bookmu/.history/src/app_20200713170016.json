@@ -1,0 +1,12 @@
+{
+  "comment":"删除多余代码，只留一个页面，并改标题，引入组件vant",
+  "pages": [
+    "pages/index/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "book",
+    "navigationBarTextStyle": "black"
+  }
+}

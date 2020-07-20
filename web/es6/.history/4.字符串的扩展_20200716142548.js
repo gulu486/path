@@ -49,7 +49,7 @@ let greeting = `\`Yo\` World!`;//反义符
 $('#list').html(`
 <ul>
   <li>first</li>
-  <li>second</li> //空格，换行都会保留
+  <li>second</li>
 </ul>
 `);
 // 上面代码中，所有模板字符串的空格和换行，都是被保留的，比如<ul>标签前面会有一个换行。如果你不想要这个换行，可以使用trim方法消除它。
